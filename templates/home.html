@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin-top: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login {
+            background-color: #fbd14b; /* Theme color */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 500px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 5px 5px 5px rgb(47, 46, 46);
+        }
+
+        h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #333;
+            font-size: 40px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 10px;
+            height: max-content
+
+        }
+
+        label {
+            display: block;
+            font-family:cursive;
+            margin-bottom: 5px;
+            margin-top: 3px;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            padding: 5px;
+            margin: 0 auto; /* Center the input fields */
+            border: 3px solid #f04805;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s; /* Hover effect */
+            display: flex;
+        }
+
+        button {
+            background-color: #fa9146;
+            color: #130909;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 auto; /* Center the button */
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #333;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .heading{
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 10px;
+        }
+        h2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="heading">
+            FWI Prediction
+        </div>
+        <div class="form">
+        <form action="{{ url_for('predict_datapoint')}}" method="POST">
+            
+            <label for="Temperature">Temperature</label>
+            <input type="text" name="Temperature" id="Temperature" required="required" />
+
+            <label for="RH">RH</label>
+            <input type="text" name="RH" id="RH" required="required" />
+
+            <label for="Ws">Ws</label>
+            <input type="text" name="Ws" id="Ws" required="required" />
+
+            <label for="Rain">Rain</label>
+            <input type="text" name="Rain" id="Rain" required="required" />
+
+            <label for="FFMC">FFMC</label>
+            <input type="text" name="FFMC" id="FFMC" required="required" />
+
+            <label for="DMC">DMC</label>
+            <input type="text" name="DMC" id="DMC" required="required" />
+
+            <label for="ISI">ISI</label>
+            <input type="text" name="ISI" id="ISI" required="required" />
+
+            <label for="Classes">Classes</label>
+            <input type="text" name="Classes" id="Classes" required="required" />
+
+            <label for="Region">Region</label>
+            <input type="text" name="Region" id="Region" required="required" /><br><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <h2 >The FWI Prediction is {{result }}</h2>
+    </div>
+    </div>
+</body>
+</html>
