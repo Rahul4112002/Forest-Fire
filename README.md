@@ -1,3 +1,7 @@
+
+
+https://github.com/Rahul4112002/Forest-Fire/assets/124488758/9a56171f-55bb-4939-8937-685316f9bb6a
+
 # Mini Project on Machine Learning: Predicting FWI (Fire Weather Index) using Algeria Forest Fire Dataset
 This repository contains the code and resources for a mini project that aims to predict the Fire Weather Index (FWI) using Algeria Forest Fire data. The project utilizes Linear Regression and is implemented as a web application using Python Flask, HTML, CSS, and other technologies.
 
