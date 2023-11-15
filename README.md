@@ -27,7 +27,7 @@ The dataset used for this project contains historical records of forest fires in
  
     Clone this repository to your local machine.
 
-git clone https://github.com/your-username/algeria-forest-fire-prediction.git
+git clone https://github.com/Rahul4112002/algeria-forest-fire-prediction.git
 
     Navigate to the project directory.
 
