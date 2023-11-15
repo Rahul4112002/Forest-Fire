@@ -27,27 +27,23 @@ The dataset used for this project contains historical records of forest fires in
  
     Clone this repository to your local machine.
 
-# bash
 git clone https://github.com/your-username/algeria-forest-fire-prediction.git
 
     Navigate to the project directory.
 
-# bash
 cd algeria-forest-fire-prediction
 
     Create a virtual environment and activate it (optional but recommended).
 
-# bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
 
     Install the project dependencies.
-# bash
+
 pip install -r requirements.txt
 
     Run the Flask application.
 
-# bash
 
 python application.py
 
